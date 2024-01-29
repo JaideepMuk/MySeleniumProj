@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Suite1">
+    <parameter name="Url" value="https://www.bing.com/" />
+    <test name="Browser Search Engine Tests">
+    <classes>
+         <class name="tests.MySelChromeTest"/>
+         <class name="tests.MySelFireFoxTest"/>
+      </classes>
+      </test>
+  </suite>
+
