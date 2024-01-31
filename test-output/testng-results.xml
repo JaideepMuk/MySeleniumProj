@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Text 'Clover: Credit Card Processing for Small Businesses | POS ...' found on search engine Google]]>
@@ -31,17 +31,34 @@
     <line>
       <![CDATA[First Text 'clover' found on search engine Bing]]>
     </line>
+    <line>
+      <![CDATA[Text 'www.clover.com
+Clover - Credit Card Processing for Small Businesses | POS ...' found on search engine yahoo]]>
+    </line>
+    <line>
+      <![CDATA[First Text 'clover' found on search engine yahoo]]>
+    </line>
+    <line>
+      <![CDATA[Text 'www.clover.com
+Clover - Credit Card Processing for Small Businesses | POS ...' found on search engine yahoo]]>
+    </line>
+    <line>
+      <![CDATA[URL 'clover' found on search engine yahoo]]>
+    </line>
+    <line>
+      <![CDATA[First Text 'clover' found on search engine yahoo]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-01-28T22:52:32 EST" name="Suite1" finished-at="2024-01-28T22:52:47 EST" duration-ms="14421">
+  <suite started-at="2024-01-30T20:45:30 EST" name="Suite1" finished-at="2024-01-30T20:46:14 EST" duration-ms="44397">
     <groups>
     </groups>
-    <test started-at="2024-01-28T22:52:32 EST" name="Browser Search Engine Tests" finished-at="2024-01-28T22:52:47 EST" duration-ms="14421">
+    <test started-at="2024-01-30T20:45:30 EST" name="Browser Search Engine Tests" finished-at="2024-01-30T20:46:14 EST" duration-ms="44397">
       <class name="tests.MySelChromeTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.MySelChromeTest@15043a2f]" started-at="2024-01-28T22:52:32 EST" name="SetUp" finished-at="2024-01-28T22:52:34 EST" duration-ms="1842" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.MySelChromeTest@d737b89]" started-at="2024-01-30T20:45:30 EST" name="SetUp" finished-at="2024-01-30T20:45:33 EST" duration-ms="3231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="enterSearchAndValidateTextInChrome(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelChromeTest@15043a2f]" started-at="2024-01-28T22:52:40 EST" name="enterSearchAndValidateTextInChrome" data-provider="TestData_Chrome" finished-at="2024-01-28T22:52:43 EST" duration-ms="3420" status="PASS">
+        <test-method signature="enterSearchAndValidateTextInChrome(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelChromeTest@d737b89]" started-at="2024-01-30T20:45:41 EST" name="enterSearchAndValidateTextInChrome" data-provider="TestData_Chrome" finished-at="2024-01-30T20:45:45 EST" duration-ms="3946" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +88,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- enterSearchAndValidateTextInChrome -->
-        <test-method signature="enterSearchAndValidateTextInChrome(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelChromeTest@15043a2f]" started-at="2024-01-28T22:52:43 EST" name="enterSearchAndValidateTextInChrome" data-provider="TestData_Chrome" finished-at="2024-01-28T22:52:46 EST" duration-ms="2677" status="PASS">
+        <test-method signature="enterSearchAndValidateTextInChrome(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelChromeTest@d737b89]" started-at="2024-01-30T20:45:45 EST" name="enterSearchAndValidateTextInChrome" data-provider="TestData_Chrome" finished-at="2024-01-30T20:45:47 EST" duration-ms="1805" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,17 +118,49 @@
             </line>
           </reporter-output>
         </test-method> <!-- enterSearchAndValidateTextInChrome -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.MySelChromeTest@15043a2f]" started-at="2024-01-28T22:52:46 EST" name="teardown" finished-at="2024-01-28T22:52:46 EST" duration-ms="243" status="PASS">
+        <test-method signature="enterSearchAndValidateTextInChrome(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelChromeTest@d737b89]" started-at="2024-01-30T20:45:47 EST" name="enterSearchAndValidateTextInChrome" data-provider="TestData_Chrome" finished-at="2024-01-30T20:46:09 EST" duration-ms="22131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[clover]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.clover.com
+Clover - Credit Card Processing for Small Businesses | POS ...]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yahoo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Text 'www.clover.com
+Clover - Credit Card Processing for Small Businesses | POS ...' found on search engine yahoo]]>
+            </line>
+            <line>
+              <![CDATA[URL 'clover' found on search engine yahoo]]>
+            </line>
+            <line>
+              <![CDATA[First Text 'clover' found on search engine yahoo]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- enterSearchAndValidateTextInChrome -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.MySelChromeTest@d737b89]" started-at="2024-01-30T20:46:09 EST" name="teardown" finished-at="2024-01-30T20:46:13 EST" duration-ms="3641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.MySelChromeTest -->
       <class name="tests.MySelFireFoxTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.MySelFireFoxTest@2d901eb0]" started-at="2024-01-28T22:52:34 EST" name="SetUp" finished-at="2024-01-28T22:52:39 EST" duration-ms="4444" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.MySelFireFoxTest@72035809]" started-at="2024-01-30T20:45:33 EST" name="SetUp" finished-at="2024-01-30T20:45:40 EST" duration-ms="7079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="enterSearchAndValidateTextInFireFox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelFireFoxTest@2d901eb0]" started-at="2024-01-28T22:52:40 EST" name="enterSearchAndValidateTextInFireFox" data-provider="TestData_FireFox" finished-at="2024-01-28T22:52:42 EST" duration-ms="2354" status="PASS">
+        <test-method signature="enterSearchAndValidateTextInFireFox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelFireFoxTest@72035809]" started-at="2024-01-30T20:45:41 EST" name="enterSearchAndValidateTextInFireFox" data-provider="TestData_FireFox" finished-at="2024-01-30T20:45:44 EST" duration-ms="2734" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -138,7 +187,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- enterSearchAndValidateTextInFireFox -->
-        <test-method signature="enterSearchAndValidateTextInFireFox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelFireFoxTest@2d901eb0]" started-at="2024-01-28T22:52:42 EST" name="enterSearchAndValidateTextInFireFox" data-provider="TestData_FireFox" finished-at="2024-01-28T22:52:43 EST" duration-ms="1302" status="PASS">
+        <test-method signature="enterSearchAndValidateTextInFireFox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelFireFoxTest@72035809]" started-at="2024-01-30T20:45:44 EST" name="enterSearchAndValidateTextInFireFox" data-provider="TestData_FireFox" finished-at="2024-01-30T20:45:45 EST" duration-ms="1771" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +214,36 @@
             </line>
           </reporter-output>
         </test-method> <!-- enterSearchAndValidateTextInFireFox -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.MySelFireFoxTest@2d901eb0]" started-at="2024-01-28T22:52:46 EST" name="teardown" finished-at="2024-01-28T22:52:47 EST" duration-ms="964" status="PASS">
+        <test-method signature="enterSearchAndValidateTextInFireFox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MySelFireFoxTest@72035809]" started-at="2024-01-30T20:45:45 EST" name="enterSearchAndValidateTextInFireFox" data-provider="TestData_FireFox" finished-at="2024-01-30T20:45:57 EST" duration-ms="12011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[clover]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.clover.com
+Clover - Credit Card Processing for Small Businesses | POS ...]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yahoo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Text 'www.clover.com
+Clover - Credit Card Processing for Small Businesses | POS ...' found on search engine yahoo]]>
+            </line>
+            <line>
+              <![CDATA[First Text 'clover' found on search engine yahoo]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- enterSearchAndValidateTextInFireFox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.MySelFireFoxTest@72035809]" started-at="2024-01-30T20:46:13 EST" name="teardown" finished-at="2024-01-30T20:46:14 EST" duration-ms="1606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

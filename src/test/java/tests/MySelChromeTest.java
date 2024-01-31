@@ -4,7 +4,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -48,11 +47,11 @@ public class MySelChromeTest {
     public void enterSearchAndValidateTextInChrome(String sTextToSearch, String strTextToValidate, String strSearchEngine) {
         Base.driver.get("https://www." + strSearchEngine + ".com/");
         Base.driver.manage().window().maximize();
-        Base.getInstance(EnterItemsInEngine.class).setSearchEditBox(sTextToSearch);
+        Base.getInstance(EnterItemsInEngine.class).setSearchEditBox(sTextToSearch,strSearchEngine);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'About')]")));
         Assert.assertEquals(Base.getInstance(EnterItemsInEngine.class).getText_link(strSearchEngine), strTextToValidate);
         Reporter.log("Text '" + strTextToValidate + "' found on search engine " + strSearchEngine);
-        Assert.assertTrue(Base.getInstance(EnterItemsInEngine.class).getURLText().matches("https://www\\." + sTextToSearch + "\\.com.*"));
+        Assert.assertTrue(Base.getInstance(EnterItemsInEngine.class).getURLText().matches(".*www\\." + sTextToSearch + "\\.com.*"));
         Reporter.log("URL '" + sTextToSearch + "' found on search engine " + strSearchEngine);
         Assert.assertTrue(Base.getInstance(EnterItemsInEngine.class).getTitleText(strSearchEngine).matches(".*(" + StringUtils.capitalize(sTextToSearch) + "|" + sTextToSearch + ").*"));
         Reporter.log("First Text '" + sTextToSearch + "' found on search engine " + strSearchEngine);
